@@ -88,11 +88,11 @@ artifacts:
 #--------------------------------------------------
 # Deploy NuGet
 #--------------------------------------------------
-#deploy:
-#  provider: NuGet
-#  api_key:
-#    secure: AhNvfOiNoCPXb1PnRG18sOfxSmsS+q4iNJ30PsuABsau99QGZ46C4nhSRSoUZehg
-#  artifact: NuGet
+deploy:
+  provider: NuGet
+  api_key:
+    secure: AhNvfOiNoCPXb1PnRG18sOfxSmsS+q4iNJ30PsuABsau99QGZ46C4nhSRSoUZehg
+  artifact: NuGet
   
 #--------------------------------------------------
 # Notifications
