@@ -43,6 +43,7 @@ before_build:
   - ps: $temp_path = (Get-Item src\$env:APPVEYOR_PROJECT_NAME\$env:APPVEYOR_PROJECT_NAME.csproj).FullName
   - ps: $temp_csproj = [xml](Get-Content $temp_path)
   - ps: $env:APPVEYOR_BUILD_VERSION = $temp_csproj.Project.PropertyGroup.Version -replace '\.[0-9]+$', '.$env:APPVEYOR_BUILD_NUMBER'
+  - %APPVEYOR_BUILD_VERSION%
 # Restore
   - dotnet restore
   
