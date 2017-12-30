@@ -7,6 +7,10 @@ namespace Ofl.Search
     {
         public SearchRequest Request { get; set; }
 
-        public IReadOnlyCollection<T> Results { get; set; }
+        public decimal? MaximumScore { get; set; }
+
+        public int? TotalHits { get; set; }
+
+        public IReadOnlyCollection<Hit<T>> Hits { get; set; }
     }
 }

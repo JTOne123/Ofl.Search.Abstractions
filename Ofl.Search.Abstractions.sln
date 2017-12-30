@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ofl.Search.Abstractions", "src\Ofl.Search.Abstractions\Ofl.Search.Abstractions.csproj", "{F34570DA-A6A5-43FA-8E7D-40DE29520DE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ofl.Search.Abstractions", "src\Ofl.Search.Abstractions\Ofl.Search.Abstractions.csproj", "{F34570DA-A6A5-43FA-8E7D-40DE29520DE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-level items", "solution-level items", "{0A828E17-852B-4915-A568-42E80E268119}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		appveyor.yml = appveyor.yml
+		directory.build.props = directory.build.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6ABC9895-BBA6-4E60-982B-CDFCC41DABDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +30,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F34570DA-A6A5-43FA-8E7D-40DE29520DE7} = {6ABC9895-BBA6-4E60-982B-CDFCC41DABDE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67BF59B3-47A7-44DA-821D-0D416AAD50AC}
 	EndGlobalSection
 EndGlobal
