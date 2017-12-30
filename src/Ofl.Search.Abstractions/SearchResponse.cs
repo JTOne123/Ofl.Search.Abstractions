@@ -9,7 +9,7 @@ namespace Ofl.Search
 
         public decimal? MaximumScore { get; set; }
 
-        public int? TotalHits { get; set; }
+        public long? TotalHits { get; set; }
 
         public IReadOnlyCollection<Hit<T>> Hits { get; set; }
     }
