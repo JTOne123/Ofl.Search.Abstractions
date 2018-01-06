@@ -7,5 +7,7 @@ namespace Ofl.Search
         where T : class
     {
         Task<SearchResponse<T>> SearchAsync(SearchRequest request, CancellationToken cancellationToken);
+
+        Task<T> GetAsync(object id, CancellationToken cancellationToken);
     }
 }
