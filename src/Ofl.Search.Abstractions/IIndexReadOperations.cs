@@ -9,6 +9,6 @@ namespace Ofl.Search
     {
         Task<SearchResponse<T>> SearchAsync(SearchRequest request, CancellationToken cancellationToken);
 
-        Task<T> GetAsync(IEnumerable<object> ids, CancellationToken cancellationToken);
+        Task<IReadOnlyCollection<T>> GetAsync(IEnumerable<object> ids, CancellationToken cancellationToken);
     }
 }
