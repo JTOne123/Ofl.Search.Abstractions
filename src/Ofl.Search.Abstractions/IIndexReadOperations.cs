@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ofl.Search
@@ -8,6 +9,6 @@ namespace Ofl.Search
     {
         Task<SearchResponse<T>> SearchAsync(SearchRequest request, CancellationToken cancellationToken);
 
-        Task<T> GetAsync(object id, CancellationToken cancellationToken);
+        Task<T> GetAsync(IEnumerable<object> ids, CancellationToken cancellationToken);
     }
 }
