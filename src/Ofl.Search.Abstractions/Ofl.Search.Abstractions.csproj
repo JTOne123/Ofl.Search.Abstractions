@@ -6,6 +6,6 @@
     <PackageProjectUrl>https://github.com/OneFrameLink/Ofl.Search.Abstractions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/OneFrameLink/Ofl.Atlassian.Jira.git</RepositoryUrl>
     <PackageTags>search</PackageTags>
-    <Version>2.1.0</Version>
+    <Version>3.0.0</Version>
   </PropertyGroup>
 </Project>
