@@ -6,6 +6,8 @@ namespace Ofl.Search
     {
         public decimal? Score { get; set; }
 
+        public string Id { get; set; }
+
         public T Item { get; set; }
 
         public IReadOnlyDictionary<string, IReadOnlyCollection<HighlightOffset>> Highlights { get; set; }
