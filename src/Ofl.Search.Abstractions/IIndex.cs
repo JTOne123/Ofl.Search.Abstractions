@@ -13,11 +13,5 @@ namespace Ofl.Search
         Task CreateAsync(CancellationToken cancellationToken);
 
         Task DestroyAsync(CancellationToken cancellationToken);
-
-        Task<IIndexWriteOperations<T>> GetWriteOperationsAsync<T>(CancellationToken cancellationToken)
-            where T : class;
-
-        Task<IIndexReadOperations<T>> GetReadOperationsAsync<T>(CancellationToken cancellationToken)
-            where T : class;
     }
 }
