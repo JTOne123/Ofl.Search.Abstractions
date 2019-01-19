@@ -8,6 +8,8 @@ namespace Ofl.Search
 
         public string Id { get; set; }
 
+        public string Index { get; set; }
+
         public T Item { get; set; }
 
         public IReadOnlyDictionary<string, IReadOnlyCollection<HighlightOffset>> Highlights { get; set; }

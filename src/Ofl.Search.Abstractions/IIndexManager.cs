@@ -10,5 +10,7 @@ namespace Ofl.Search
         Task<IIndex> GetIndexAsync(string name, CancellationToken cancellationToken);
 
         Task<IReadOnlyCollection<IIndex>> GetIndexesAsync(CancellationToken cancellationToken);
+
+        Task<MultiIndexGetResponse> MultiIndexGetAsync(MultiIndexGetRequest request, CancellationToken cancellationToken);
     }
 }
