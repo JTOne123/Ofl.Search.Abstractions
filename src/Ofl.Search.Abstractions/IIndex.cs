@@ -10,6 +10,8 @@ namespace Ofl.Search
 
         Task<bool> ExistsAsync(CancellationToken cancellationToken);
 
+        Task<IndexStats> GetStatsAsync(CancellationToken cancellationToken);
+
         Task CreateAsync(CancellationToken cancellationToken);
 
         Task DestroyAsync(CancellationToken cancellationToken);
