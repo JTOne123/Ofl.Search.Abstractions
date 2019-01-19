@@ -8,6 +8,8 @@ namespace Ofl.Search
     {
         string Name { get; }
 
+        Type Type { get; }
+
         Task<bool> ExistsAsync(CancellationToken cancellationToken);
 
         Task<IndexStats> GetStatsAsync(CancellationToken cancellationToken);
